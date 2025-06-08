@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>All JavaScript Alerts in One Script</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Chapter Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 70%;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+    }
+    hr {
+      margin: 25px 0;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>JavaScript Alerts Practice</h1>
-  <p>This page demonstrates all alerts in one script tag.</p>
-
+  <h1>JavaScript Practice (Ch 6–9)</h1>
   <script>
-      // CHAPTER 1------------------------
-    // Exercise 1
-    alert("Welcome to our website!");
+    // Q1: Arithmetic on a variable
+    document.write("<h2>Q1: Simple Arithmetic on Variable</h2>");
+    var num = 5;
+    document.write("Initial value: " + num + "<br>");
+    var result = (((num + 5) * 10) / 2); // Just an example calculation
+    document.write("Result of ((num + 5) * 10) / 2 is: " + result + "<hr>");
 
-    // Exercise 2
-    alert("Error! Please enter a valid password.");
+    // Q2: Output after complex expression
+    document.write("<h2>Q2: Expression Output</h2>");
+    var a = 2, b = 1;
+    var result = --a - --b + ++b + b--;
+    document.write("Initial a = 2, b = 1<br>");
+    document.write("Result = --a - --b + ++b + b--<br>");
+    document.write("<b>Step by Step:</b><br>");
+    document.write("--a = " + (--a) + "<br>"); // a becomes 1
+    document.write("--b = " + (--b) + "<br>"); // b becomes 0
+    document.write("++b = " + (++b) + "<br>"); // b becomes 1
+    document.write("b-- = " + (b--) + "<br>"); // uses 1 then b becomes 0
+    document.write("Final values: a = " + a + ", b = " + b + ", result = 3<br><hr>");
 
-    // Exercise 3
-    alert("Welcome to JS Land...\nHappy Coding!");
+    // Q3: Greet the user
+    document.write("<h2>Q3: Greet the User</h2>");
+    var userName = prompt("Enter your name:");
+    alert("Hello, " + userName + "!");
+    document.write("Hello, <strong>" + userName + "</strong>!<hr>");
 
-    // Exercise 4
-    alert("Welcome to JS Land...");
-    alert("Happy Coding!");
+    // Q5: Multiplication Table
+    document.write("<h2>Q5: Multiplication Table</h2>");
+    var number = +prompt("Enter a number for multiplication table", 5);
+    if (isNaN(number) || number === 0) number = 5;
+    document.write("<strong>Multiplication Table of " + number + "</strong><br>");
+    for (var i = 1; i <= 10; i++) {
+      document.write(number + " x " + i + " = " + (number * i) + "<br>");
+    }
+    document.write("<hr>");
 
-    // Exercise 5
-    console.log("Hello... I can run JS through my web browser's console");
+    // Q6: Marks Sheet
+    document.write("<h2>Q6: Marks Sheet</h2>");
+    var subject1 = prompt("Enter name of 1st subject:");
+    var subject2 = prompt("Enter name of 2nd subject:");
+    var subject3 = prompt("Enter name of 3rd subject:");
+    var totalMarks = 100;
 
-    // Exercise 6
-    alert("This is an alert used in an HTML & CSS project.");
+    var marks1 = +prompt("Enter obtained marks for " + subject1 + ":");
+    var marks2 = +prompt("Enter obtained marks for " + subject2 + ":");
+    var marks3 = +prompt("Enter obtained marks for " + subject3 + ":");
 
-    // Exercise 7 (script position messages)
-    alert("Script in <head> section");        // Simulated
-    alert("Script before HTML content");      // Simulated
-    alert("Script inside HTML content");      // Simulated
-    alert("Script after HTML content");       // Simulated
+    var totalObtained = marks1 + marks2 + marks3;
+    var grandTotal = totalMarks * 3;
+    var percentage = (totalObtained / grandTotal) * 100;
 
-
-    // CHAPTER 2------------------------
-      // 1. Declare a variable called username
-    var username;
-
-    // 2. Declare a variable called myName and assign full name
-    var myName = "Maryum Abdullah";
-
-    // 3. Message variable example
-    var message;
-    message = "Hello World";
-    alert(message);
-
-    // 4. Student bio data in alert boxes
-    var studentName = "maria";
-    var studentAge = "18 years old";
-    var studentCourse = "Web and App Development";
-    alert(studentName);
-    alert(studentAge);
-    alert(studentCourse);
-
-    // 5. Display this alert using one variable
-    var pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP";
-    alert(pizza);
-
-    // 6. Email example
-    var email = "John@gmail.com";
-    alert("My email address is " + email);
-
-    // 7. Book example
-    var book = "A smarter way to learn JavaScript";
-    alert("I am trying to learn from the Book " + book);
-
-    // 8. Display text in browser using JS
-    document.write("Yah! I can write HTML content through JavaScript");
-
-    // 9. Show special string in alert and browser
-    var design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
-    alert(design);
-    document.write("<br>" + design);
+    document.write("<table>");
+    document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+    document.write("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + marks1 + "</td></tr>");
+    document.write("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + marks2 + "</td></tr>");
+    document.write("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + marks3 + "</td></tr>");
+    document.write("<tr><th>Total</th><th>" + grandTotal + "</th><th>" + totalObtained + "</th></tr>");
+    document.write("</table>");
+    document.write("<br><strong>Percentage: </strong>" + percentage.toFixed(2) + "%<hr>");
   </script>
 </body>
 </html>
