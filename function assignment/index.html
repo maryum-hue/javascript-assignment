@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style> -->
+
+  <!-- /* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  input[type="number"] {
+    width: 140px;
+    padding: 10px 12px;
+    margin: 8px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s;
+  }
+
+  input[type="number"]:focus {
+    border-color: #0077cc;
+  }
+
+  button {
+    margin: 6px 4px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background: #e058ed;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.1s;
+  }
+
+  button:hover {
+    background: #de9dee;
+  }
+
+  button:active {
+    transform: scale(0.97);
+  }
+
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px dashed #0077cc;
+    border-radius: 6px;
+    background: #eef6fb;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    height: 30px;
+   } 
+/*</style> */ -->
+
+
+</head>
+<body>
+<!-- <input type="number" id="number1">
+<br> <br>
+<input type="number" id="number2">
+<br><br>
+<button id="btn">Add the number</button>
+<p id="sumNum"></p> -->
+
+
+<!-- <input type="number" id="numberOne">
+<br><br>
+<input type="number" id="numberTwo">
+<br><br>
+<button id="btn1" onclick="add()">➕</button>
+<button id="btn2" onclick="minus()">➖</button>
+<button id="btn3" onclick="divide()">✖</button>
+<button id="btn4" onclick="multiply()">➗</button>
+<p id="result"></p> -->
+    <script>
+// QUESTION 1
+// var theDate = new Date(2015, 4, 10, 22, 18, 39); 
+// document.write(theDate);
+
+// QUESTION 2
+
+// function greetUser() {
+//   var firstName = prompt("Enter your first name:");
+//   var lastName = prompt("Enter your last name:");
+//   var fullName = firstName + " " + lastName;
+//   alert("Hello, " + fullName + "! Welcome.");
+// }
+
+// greetUser();
+// QUESTION 3
+
+// var numb1 = document.getElementById("number1");
+// var numb2 = document.getElementById("number2");
+// var btn = document.getElementById("btn");
+// var sumNum = document.getElementById("sumNum");
+
+// function addNumbers() {
+//   var num1 = +numb1.value; // get value and convert to number
+//   var num2 = +numb2.value;
+//   var sum = num1 + num2;
+
+//   sumNum.textContent = `The sum of ${num1} + ${num2} is ${sum}`;
+// }
+
+// btn.addEventListener("click", addNumbers);
+
+
+// QUESTION 4
+// var num1 = document.getElementById("numberOne");
+// var num2 = document.getElementById("numberTwo");
+
+// var btn1 = document.getElementById("btn1");
+// var btn2 = document.getElementById("btn2");
+// var btn3 = document.getElementById("btn3");
+// var btn4 = document.getElementById("btn4");
+
+// var input = document.getElementById("input");
+// var result = document.getElementById("result");
+
+// var output;
+
+// function add() {
+//   var output = +num1.value + +num2.value;
+//   result.innerText = output;
+//   return output;
+// }
+
+// function minus() {
+//   var output = +num1.value - +num2.value;
+//   result.innerText = output;
+//   return output;
+// }
+
+// function divide() {
+//   var output = +num1.value / +num2.value; 
+//   result.innerText = output;
+//   return output;
+// }
+
+// function multiply() {
+//   var output = +num1.value * +num2.value; 
+//   result.innerText = output;
+//   return output;
+// }
+
+
+
+// QUESTION 5
+
+// function square(x) {
+//   return x * x;
+// }
+// console.log(square(5)); 
+
+// QUESTION 6
+
+// function factorial(number) {
+//   if(number === 0 || number === 1){
+//     return 1;
+//   }
+//   return number * factorial(number -1);
+// }
+// console.log(factorial(5));
+  
+
+// QUESTION 7
+
+
+// function calculate(){
+//   let base = +prompt("enter base");
+//   let perpendicular = +prompt("enter perpendicular");
+
+//   function calculateSquare(number){
+//     return number * number;
+//   }
+
+//   let squreOfBase = calculateSquare(base);
+//   let squreOfperpendicular = calculateSquare(perpendicular);
+
+//   let sumOfsqaure = squreOfBase + squreOfperpendicular;
+
+//   let hypotenuse = Math.sqrt(sumOfsqaure);
+
+//   document.write(`Hypotenuse is:  ${hypotenuse} 🥳🥳🥳🥳`);
+
+// }
+// calculate()
+
+// QUESTION 9
+
+// let width = +prompt('enter the width');
+// let height = +prompt('enter the height');
+// let area;
+
+// function calculateArea(width, height) {
+ 
+// area =  width * height;
+// document.write(`${area} Easy peasy!`);
+// }
+
+// calculateArea(width, height);
+
+// QUESTION 10
+
+// let word = prompt("enter a word");
+
+// function pallendrum(){
+//   let reversed = word.split('').reverse().join('');
+//   if(reversed === word){
+//     console.log("yuop it s palendrum");
+//   }else{
+//     console.log("it isnt'");
+//   }
+
+// }
+// pallendrum()
+// QUESTION 11
+
+// function capitalizeWords(str) {
+//   let words = str.split(' ');
+//   for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//   }
+//   return words.join(' ');
+// }
+
+// let sentence = prompt("Enter a sentence:");
+// document.write(capitalizeWords(sentence));
+// QUESTION 12
+
+// let word = prompt("enter a sentence");
+// let wordSplit;
+
+// function longestWordFunc(){
+//   wordSplit = word.split(' ')
+//   let longestWord = wordSplit[0];
+//   for(let i = 0; i < wordSplit.length; i++){
+    
+//     if (wordSplit[i].length > longestWord.length){
+//      longestWord = wordSplit[i];
+//     }
+    
+//   }
+//    document.write(longestWord);
+  
+//    return longestWord;
+
+// }
+// longestWordFunc()
+// QUESTION 13
+
+// let word = prompt("Enter a sentence:");
+// let letter = prompt("Enter a letter to count:"); 
+
+// function times(word, letter) {
+//   let count = 0;
+
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// document.write("The letter " + letter + " appears " + times(word, letter) + " times.");
+
+// QUESTION 14
+
+
+function calcCircumference(radius) {
+  let circumference = 2 * Math.PI * radius;
+  document.write("The circumference is " + circumference + "<br>");
+}
+
+function calcArea(radius) {
+  let area = Math.PI * radius * radius;
+  document.write("The area is " + area);
+}
+
+let radius = prompt("Enter the radius:");
+calcCircumference(radius);
+calcArea(radius);
+    </script>
+</body>
+</html>
