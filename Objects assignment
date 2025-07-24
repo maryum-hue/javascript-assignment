@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let techGadgets = {
+            laptops: {
+                macbookAir: { name: "MacBook Air M3", price: "PKR 3.8 lac", colors: ["Silver", "Grey", "Gold"], series: "MacBook Air Series" },
+                macbookPro: { name: "MacBook Pro M3", price: "PKR 5.5 lac", colors: ["Silver", "Grey"], series: "MacBook Pro Series" },
+                dellXPS: { name: "Dell XPS 13", price: "PKR 3.2 lac", colors: ["Silver", "Black"], series: "XPS Series" },
+                hpSpectre: { name: "HP Spectre x360", price: "PKR 3.0 lac", colors: ["Silver", "Blue"], series: "Spectre Series" },
+                lenovoThinkPad: { name: "Lenovo ThinkPad X1", price: "PKR 3.5 lac", colors: ["Black"], series: "ThinkPad Series" },
+                asusZenBook: { name: "Asus ZenBook 14", price: "PKR 2.8 lac", colors: ["Silver"], series: "ZenBook Series" },
+                acerSwift: { name: "Acer Swift 5", price: "PKR 2.5 lac", colors: ["Grey"], series: "Swift Series" },
+                microsoftSurface: { name: "Microsoft Surface Laptop 5", price: "PKR 3.6 lac", colors: ["Black", "Platinum"], series: "Surface Series" },
+                msiStealth: { name: "MSI Stealth 15M", price: "PKR 3.9 lac", colors: ["Black"], series: "Stealth Series" },
+                razerBlade: { name: "Razer Blade 15", price: "PKR 4.2 lac", colors: ["Black"], series: "Blade Series" }
+            },
+            smartphones: {
+                iphone15: { name: "iPhone 15 Pro Max", price: "PKR 5.0 lac", colors: ["Black", "White", "Blue", "Gold"], series: "iPhone Series" },
+                iphoneSE: { name: "iPhone SE 3", price: "PKR 2.5 lac", colors: ["Black", "White", "Red"], series: "iPhone Series" },
+                galaxyS24: { name: "Samsung Galaxy S24", price: "PKR 3.2 lac", colors: ["Black", "White", "Blue"], series: "Galaxy S Series" },
+                galaxyA54: { name: "Samsung Galaxy A54", price: "PKR 1.2 lac", colors: ["Black", "White"], series: "Galaxy A Series" },
+                galaxyZFold5: { name: "Samsung Galaxy Z Fold 5", price: "PKR 5.5 lac", colors: ["Black", "Silver"], series: "Galaxy Z Fold Series" },
+                googlePixel: { name: "Google Pixel 8 Pro", price: "PKR 3.5 lac", colors: ["Black", "White", "Blue"], series: "Pixel Series" },
+                onePlus12: { name: "OnePlus 12", price: "PKR 2.9 lac", colors: ["Black", "Green"], series: "OnePlus Series" },
+                oppoFindX: { name: "Oppo Find X6", price: "PKR 2.7 lac", colors: ["Black", "White"], series: "Find X Series" },
+                vivoX90: { name: "Vivo X90 Pro", price: "PKR 2.8 lac", colors: ["Black", "Blue"], series: "X Series" },
+                xiaomiMi13: { name: "Xiaomi Mi 13", price: "PKR 2.5 lac", colors: ["Black", "White", "Green"], series: "Mi Series" }
+            },
+            headphones: {
+                airpodsPro: { name: "AirPods Pro 2", price: "PKR 85,000", colors: ["White"], series: "AirPods Series" },
+                airpodsMax: { name: "AirPods Max", price: "PKR 1.3 lac", colors: ["Silver", "Space Grey"], series: "AirPods Series" },
+                sonyXM5: { name: "Sony WH-1000XM5", price: "PKR 1.1 lac", colors: ["Black", "Silver"], series: "Sony XM Series" },
+                boseQC45: { name: "Bose QuietComfort 45", price: "PKR 95,000", colors: ["Black", "White"], series: "QuietComfort Series" },
+                beatsStudio: { name: "Beats Studio 3", price: "PKR 80,000", colors: ["Black", "Red", "Blue"], series: "Beats Studio Series" },
+                jblTune: { name: "JBL Tune 760NC", price: "PKR 50,000", colors: ["Black", "Blue", "White"], series: "JBL Tune Series" },
+                sennheiserHD: { name: "Sennheiser HD 450BT", price: "PKR 65,000", colors: ["Black"], series: "HD Series" },
+                marshallMajor: { name: "Marshall Major IV", price: "PKR 55,000", colors: ["Black", "Brown"], series: "Major Series" },
+                ankerSoundcore: { name: "Anker Soundcore Life Q35", price: "PKR 40,000", colors: ["Blue", "Black"], series: "Soundcore Series" },
+                skullcandyCrusher: { name: "Skullcandy Crusher Evo", price: "PKR 45,000", colors: ["Black", "Grey"], series: "Crusher Series" }
+            },
+            tablets: {
+                ipadPro: { name: "iPad Pro 12.9",
+                 price: "PKR 3.5 lac", 
+                 colors: ["Silver", "Space Grey"],
+                  series: "iPad Pro Series" },
+                ipadAir: { name: "iPad Air 5",
+                 price: "PKR 2.2 lac", 
+                 colors: ["Blue", "Pink", "Grey"],
+                  series: "iPad Air Series" },
+                galaxyTabS9: { name: "Samsung Galaxy Tab S9",
+                 price: "PKR 2.8 lac",
+                  colors: ["Silver", "Black"], series: 
+                  "Galaxy Tab S Series" },
+                surfacePro: { name: "Microsoft Surface Pro 9",
+                 price: "PKR 3.0 lac", 
+                 colors: ["Platinum", "Black"], 
+                 series: "Surface Pro Series" },
+                lenovoTabP11: { name: "Lenovo Tab P11 Pro", price: "PKR 1.8 lac", colors: ["Grey"], series: "Tab P Series" },
+                huaweiMatePad: { name: "Huawei MatePad Pro", price: "PKR 2.4 lac", colors: ["Grey"], series: "MatePad Series" },
+                amazonFire: { name: "Amazon Fire HD 10", price: "PKR 60,000", colors: ["Black"], series: "Fire HD Series" },
+                oppoPad: { name: "Oppo Pad Air", price: "PKR 1.5 lac", colors: ["Grey"], series: "Pad Series" },
+                xiaomiPad: { name: "Xiaomi Pad 6", price: "PKR 1.7 lac", colors: ["Black"], series: "Pad Series" },
+                realmePad: { name: "Realme Pad X", price: "PKR 1.4 lac", colors: ["Grey"], series: "Pad Series" }
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>
