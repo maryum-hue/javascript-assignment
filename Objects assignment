@@ -71,6 +71,20 @@
                 realmePad: { name: "Realme Pad X", price: "PKR 1.4 lac", colors: ["Grey"], series: "Pad Series" }
             }
         };
+smartwatches: {
+    appleWatch: { name: "Apple Watch Series 9", price: "PKR 1.2 lac", colors: ["Black", "Silver", "Red"], series: "Apple Watch Series" },
+    galaxyWatch: { name: "Galaxy Watch 6", price: "PKR 95,000", colors: ["Black", "Silver"], series: "Galaxy Watch Series" },
+    fitbitVersa: { name: "Fitbit Versa 4", price: "PKR 65,000", colors: ["Black", "Pink"], series: "Versa Series" },
+    garminVenu: { name: "Garmin Venu 2", price: "PKR 85,000", colors: ["Black", "White"], series: "Venu Series" },
+    huaweiWatch: { name: "Huawei Watch GT 4", price: "PKR 70,000", colors: ["Black", "Silver"], series: "Watch GT Series" },
+    amazfitGTS: { name: "Amazfit GTS 4", price: "PKR 50,000", colors: ["Black", "Pink"], series: "GTS Series" },
+    xiaomiWatch: { name: "Xiaomi Watch S1", price: "PKR 45,000", colors: ["Black", "Silver"], series: "Watch Series" },
+    oneplusWatch: { name: "OnePlus Watch 2", price: "PKR 55,000", colors: ["Black"], series: "OnePlus Watch Series" },
+    oppoWatch: { name: "Oppo Watch 4", price: "PKR 60,000", colors: ["Black", "Silver"], series: "Oppo Watch Series" },
+    realmeWatch: { name: "Realme Watch 3 Pro", price: "PKR 35,000", colors: ["Black"], series: "Realme Watch Series" }
+  }
+}
+
 
     </script>
 
