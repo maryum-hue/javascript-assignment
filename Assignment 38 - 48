@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h3>Enter your Phrase</h3>
+    <input type="text" id="phrase">
+    <h3>Enter your the letter you want to find</h3>
+    <input type="text" id="find">
+    <button onclick="check()">Find Index</button>
+    <div id="div"></div> -->
+
+
+    <!-- <h3>Enter a sentence (max 25 letters)</h3>
+    <input type="text" id="sentenceInput">
+    <button onclick="remove()">Remove Vowels</button>
+    <div id="result"></div> -->
+    <!-- <input type="text" id="line">
+<button onclick="checks()">Count Vowel Pairs</button>
+<div id="div"></div> -->
+
+    <!-- <input type="number" id="kmInput" placeholder="Enter km">
+    <button onclick="convertToMeters(getKm())">Meters</button>
+    <button onclick="convertToCentimeters(getKm())">Centimeters</button>
+    <button onclick="convertToFeet(getKm())">Feet</button>
+    <button onclick="convertToInches(getKm())">Inches</button>
+    <div id="output"></div> -->
+
+    <!-- <input type="text" id="hoursWorked">
+    <button onclick="calculateOvertime()">Check Overtime</button>
+    <div id="output"></div> -->
+
+    
+    <!-- <h3>Enter Your amount in hundres</h3>
+    <input type="text" id="amount">
+    <button onclick="calculate()">CHECK</button>
+    <div id="output"></div> -->
+
+    <script>
+        // QUESTION 1 ==================
+
+        // function raisedPower(a, b){
+        //     var ans = Math.pow(a, b);
+        //     return ans;
+        // }
+        // console.log(raisedPower(2, 3));
+
+        // QUESTION 2 ==================
+
+        // function leapYear(year){
+        //     if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0){
+        //       return true;  
+        //     }else{
+        //         return false;
+        //     }
+
+        // }
+        // console.log(leapYear(2022));
+
+        // QUESTION 3 ==================
+
+        // function areaOfTriangle(a, b, c){
+        //     var s = (a + b + c) / 2
+        //     var mul = s * (s - a) * (s - b) * (s - c)
+        //     var area = Math.sqrt(mul)
+        //     return area;
+        // }
+        // console.log(areaOfTriangle(2, 4, 5));
+
+
+        // QUESTION 4 ==================
+
+        // var mark1 = +prompt("marks of subject 1");
+        // var mark2 = +prompt("marks of subject 1");
+        // var mark3 = +prompt("marks of subject 1");
+
+        // function calculate() {
+        //     function avg() {
+        //         var average = (mark1 + mark2 + mark3) / 3
+        //         return average;
+
+        //     }
+
+        //     function per() {
+        //         var total = mark1 + mark2 + mark3
+        //         var percentage = (total / 300) * 100
+        //         return percentage;
+
+        //     }
+        //     var result1 = avg();
+        //     var result2 = per();
+        //     console.log(result1);
+        //     console.log(result2);
+        // }
+
+        // calculate()
+
+        // QUESTION 5 ==================
+
+        //   function check() {
+        //   var phrase = document.getElementById("phrase").value;
+        //   var div = document.getElementById("div");
+        //   var find = document.getElementById("find").value;
+        //   var result = findIndex(phrase, find);
+        //   div.innerText = result;
+        //          }
+
+        //     function findIndex(word, find){
+        //          for(i = 0; i < word.length; i++){
+        //             if(word[i] === find){
+        //                 return i;
+        //             }
+        //          }
+        //          return -1;
+        //     }
+
+
+
+        // QUESTION 6 ==================
+        // function remove() {
+        //     var sentence = document.getElementById("sentenceInput").value;
+        //     var result = vowlesRemove(sentence);
+        //     document.getElementById("result").innerHTML = result;
+        // }
+        // function vowlesRemove(string) {
+        //     var noVowels = "";
+        //     for (i = 0; i < string.length; i++) {
+        //         var letter = string[i];
+        //         if (letter !== "a" && letter !== "e" && letter !== "i" && letter !== "o" && letter !== "u") {
+        //             noVowels = noVowels + letter;
+        //         }
+        //     }
+        //     return noVowels;
+        // }
+
+        // QUESTION 7 ==================
+
+        // function checks() {
+        //     var line = document.getElementById("line").value;
+        //     var div = document.getElementById("div");
+        //     var result = countVowels(line);
+        //     div.innerText = result;
+
+
+        // }
+
+
+        // function countVowels(input) {
+        //     var count = 0;
+        //     for (i = 0; i < input.length - 1; i++) {
+        //         var current = input[i];
+        //         var next = input[i + 1];
+        //         switch (current) {
+        //             case "a":
+        //             case "e":
+        //             case "i":
+        //             case "o":
+        //             case "u":
+
+        //                 if (
+        //                     next === "a" ||
+        //                     next === "e" ||
+        //                     next === "i" ||
+        //                     next === "o" ||
+        //                     next === "u"
+        //                 ) {
+        //                     count++;
+        //                 }
+        //                 break;
+        //         }
+        //     }
+
+        //     return count;
+        // }
+
+        // QUESTION 8 ==================
+
+        // function getKm() {
+        //     return parseFloat(document.getElementById("kmInput").value);
+        // }
+        // function convertToMeters(kilometers) {
+        //     var result = kilometers * 1000;
+        //     document.getElementById("output").innerText = result;
+        // }
+
+        // function convertToCentimeters(kilometers) {
+        //     var result = kilometers * 100000;
+        //     document.getElementById("output").innerText = result;
+        // }
+        // function convertToFeet(kilometers) {
+        //     var result = kilometers * 1000 * 3.28084;
+        //     document.getElementById("output").innerText = result;
+        // }
+        // function convertToInches(kilometers) {
+        //     var result = kilometers * 1000 * 39.3701;
+        //     document.getElementById("output").innerText = result;
+        // }
+
+        // QUESTION 9 ==================
+
+
+        // var div = document.getElementById("output");
+
+        // function calculateOvertime() {
+        //     var hoursWorked = parseFloat(document.getElementById("hoursWorked").value);
+
+        //     var overtime = 0;
+        //     var overtimePay = 0;
+
+        //     if (hoursWorked > 40) {
+        //         overtime = hoursWorked - 40;
+        //         overtimePay = overtime * 12
+        //     }
+
+
+        //     div.innerText = overtimePay
+        // }
+
+        // QUESTION 10 ==================
+
+
+
+
+
+        // var remainderdevision;
+
+        // function calculate() {
+        //     var amount = parseFloat(document.getElementById("amount").value);
+        //     var totalAmount = Math.floor(amount);
+        //     var totalHundreds = Math.floor(totalAmount / 100);
+        //     var remainder = totalAmount % 100;
+        //     var totaFifties = Math.floor(remainder / 50);
+        //     remainder = remainder % 50;
+        //     var totalTens = Math.floor(remainder / 10);
+
+        //     var outputDiv = document.getElementById("output");
+        //     outputDiv.innerText =
+        //         "100s: " + totalHundreds + "\n" +
+        //         "50s: " + totaFifties + "\n" +
+        //         "10s: " + totalTens;
+        // }
+
+
+    </script>
+</body>
+
+</html>
